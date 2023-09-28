@@ -1,5 +1,5 @@
-import Logo from '../assets/logo.png'
-import Search from '../assets/search.png'
+import Logo from '../../assets/logo.png'
+import Search from '../../assets/search.png'
 import styles from './Header.module.scss'
 
 export default function Header() {
