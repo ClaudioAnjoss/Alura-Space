@@ -2,6 +2,8 @@ import Menu from '../../Components/Menu'
 import Header from '../../Components/Header'
 import Banner from '../../assets/banner.png'
 import styles from './PaginaInicial.module.scss'
+import Galeria from '../../Components/Galeria'
+import Populares from '../../Components/Populares'
 
 export default function PaginaInical() {
   return (
@@ -15,6 +17,10 @@ export default function PaginaInical() {
             <img src={Banner} alt="A imagem da terra vista do espaco" />
           </div>
         </section>
+        <div className={styles.galeria}>
+          <Galeria />
+          <Populares />
+        </div>
       </main>
     </>
   )
