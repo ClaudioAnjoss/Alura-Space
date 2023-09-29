@@ -1,14 +1,19 @@
 import styles from './Tags.module.scss'
+import fotos from '../Galeria/fotos.json'
 
-export default function Tags() {
+export default function Tags({ tags, filtraFotos, setItens }) {
   return (
     <div className={styles.tags}>
       <p className={styles.tags__p}>filtre por tags:</p>
       <ul className={styles.tags__lista}>
-        <li>Estrelas</li>
-        <li>Galaxias</li>
-        <li>Lua</li>
-        <li>Planetas</li>
+        {tags.map((tag) => {
+          return (
+            <li key={tag} onClick={() => filtraFotos(tag)}>
+              {tag}
+            </li>
+          )
+        })}
+        <li onClick={() => setItens(fotos)}>Todas</li>
       </ul>
     </div>
   )

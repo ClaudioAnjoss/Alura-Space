@@ -1,5 +1,5 @@
-import open from '../../../assets/open.png'
-import favorito from '../../../assets/favorito.png'
+import open from 'assets/open.png'
+import favorito from 'assets/favorito.png'
 
 export default function Cards({ itens, styles }) {
   console.log(itens)
