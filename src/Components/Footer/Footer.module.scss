@@ -1,0 +1,22 @@
+@import "styles/variaveis";
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: $azul-escuro;
+
+    &__icones {
+        img{
+            width: 33px;
+            margin: 0 8px;
+        }
+    }
+
+    p {
+        font-family: $fonte-bold;
+        font-size: 16px;
+        color: #fff;
+    }
+}

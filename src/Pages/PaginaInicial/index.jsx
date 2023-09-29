@@ -5,6 +5,7 @@ import Galeria from 'Components/Galeria'
 import Populares from 'Components/Populares'
 
 import styles from './PaginaInicial.module.scss'
+import Footer from 'Components/Footer'
 
 export default function PaginaInical() {
   return (
@@ -23,6 +24,7 @@ export default function PaginaInical() {
           <Populares />
         </div>
       </main>
+      <Footer />
     </>
   )
 }

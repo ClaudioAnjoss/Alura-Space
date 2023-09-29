@@ -13,9 +13,14 @@
     font-size: 1.25rem;
   }
 
+  @media (max-width: 770px) {
+    p {
+      display: none;
+    }
+  }
+
   &__lista {
     list-style: none;
-    width: 380px;
     padding: 0;
     display: flex;
     justify-content: space-between;
@@ -25,6 +30,23 @@
       padding: 6px 10px;
       border-radius: 8px;
       cursor: pointer;
+      margin: 4px;
+    }
+  }
+
+  @media (max-width: 770px) {
+    &__lista {
+      margin: auto;
+    }
+  }
+
+  @media (max-width: 400px) {
+    &__lista {
+      flex-direction: column;
+      li{
+        text-align: center;
+        max-width: 70px;
+      }
     }
   }
 }

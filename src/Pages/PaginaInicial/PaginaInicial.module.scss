@@ -33,6 +33,18 @@ main {
     }
   }
 
+  @media (max-width: 800px) {
+    &__imagem {
+      width: 70%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    &__imagem {
+      display: none;
+    }
+  }
+
 }
 .galeria {
   display: flex;
@@ -40,4 +52,10 @@ main {
   align-items: flex-start;
   margin-left: 17%;
   margin-top: 1rem;
+}
+
+@media (max-width: 800px) {
+  .galeria {
+    margin: 0;
+  }
 }
